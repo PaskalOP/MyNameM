@@ -5,8 +5,7 @@ import com.google.gson.GsonBuilder;
 public class Main {
     public static void main(String[] args) {
         Dto myName = new Dto("Olha","Paskal");
-        //Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        //gson.toJson(myName)
-        System.out.println("Бла бла бла");
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        System.out.println(gson.toJson(myName));
     }
 }
